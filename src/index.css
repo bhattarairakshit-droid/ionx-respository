@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 228 30% 8%;
+    --foreground: 210 40% 92%;
+
+    --card: 230 25% 12%;
+    --card-foreground: 210 40% 92%;
+
+    --popover: 230 25% 12%;
+    --popover-foreground: 210 40% 92%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 228 30% 8%;
+
+    --secondary: 230 20% 18%;
+    --secondary-foreground: 210 40% 92%;
+
+    --muted: 230 18% 16%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 230 20% 18%;
+    --accent-foreground: 210 40% 92%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 15% 22%;
+    --input: 230 15% 22%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.625rem;
+
+    --ion-carbon: 180 100% 50%;
+    --ion-proton: 30 100% 50%;
+    --ion-alpha: 120 100% 50%;
+
+    --chart-1: 180 100% 50%;
+    --chart-2: 30 100% 50%;
+    --chart-3: 120 100% 50%;
+    --chart-4: 0 80% 60%;
+    --chart-5: 270 70% 60%;
+
+    --sidebar-background: 230 25% 10%;
+    --sidebar-foreground: 210 40% 92%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 228 30% 8%;
+    --sidebar-accent: 230 20% 15%;
+    --sidebar-accent-foreground: 210 40% 92%;
+    --sidebar-border: 230 15% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", "SF Pro Display", system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(230, 25%, 10%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(230, 15%, 25%);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(230, 15%, 35%);
+}
